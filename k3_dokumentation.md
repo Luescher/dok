@@ -41,7 +41,7 @@ Zeigt, welche Leserprofile primär an welchen Kapiteln interessiert sind.
 "rote Fäden" sind Dokumentationen zu einem fachlichen Thema oder einem definierten Projektablauf. 
 ## Kapitel der Dokumentation
 * **Verantwortlicher**: Projektverantwortlicher
-* **Überblick**: Kurze Beschreibung/Übersicht des Projektes, Projektinhaltes und Projektablaufs
+* **Beschreibung**: Kurze Beschreibung/Übersicht des Projektes, Projektinhaltes und Projektablaufs
 * **Erfassung:** 
   * Wie werden die Daten erfasst: Es wird unterschieden zwischen einer *Standard Erfassung im QGIS* und der *Erfassung in einer Fachapplikation*  
     * *Standard Erfassung im QGIS*: Wo ist das Projekt abgelegt. Wie werden die Daten erfasst. Gibt es besonderes was zu beachten ist?    
