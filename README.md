@@ -1,4 +1,4 @@
-![]((https://https://github.com/sogis/dok/blob/master/Logo.png)
+![](https://https://github.com/sogis/dok/blob/master/Logo.png)
 
 **Amt für Geoinformation**
 # Dokumentenablage
