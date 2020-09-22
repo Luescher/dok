@@ -41,7 +41,7 @@ Zeigt, welche Leserprofile primär an welchen Kapiteln interessiert sind.
 "rote Fäden" sind Dokumentationen zu einem fachlichen Thema oder einem definierten Projektablauf. 
 ## Kapitel der Dokumentation
 * **Verantwortlicher**: Projektverantwortlicher
-* **Beschreibung**: Kurze Beschreibung/Übersicht des Projektes, Projektinhaltes und Projektablaufs
+* **Überblick**: Kurze Beschreibung/Übersicht des Projektes, Projektinhaltes und Projektablaufs
 * **Erfassung:** 
   * Wie werden die Daten erfasst: Es wird unterschieden zwischen einer *Standard Erfassung im QGIS* und der *Erfassung in einer Fachapplikation*  
     * *Standard Erfassung im QGIS*: Wo ist das Projekt abgelegt. Wie werden die Daten erfasst. Gibt es besonderes was zu beachten ist?    
@@ -57,7 +57,7 @@ Zeigt, welche Leserprofile primär an welchen Kapiteln interessiert sind.
 Anleitungen ausserhalb der Funktionalen Einheiten sind definierte und wiederkehrende Arbeitsabläufe welche nicht einer Funktionalen Einheit zugeordnet werden können.
 ## Kapitel der Dokumentation
 * **Verantwortlicher**: AGI MA welcher den Arbeitsablauf ausführt
-* **Beschreibung**: Kurze Beschreibung/Übersicht des Arbeitsablaufes
-  * **Auslöser**: Wer löst den Arbeitsablauf aus
-  * **Häufigkeit**: Wie Oft pro Monat/Jahr wird der Arbeitsabaluf ausgeführt
+* **Überblick**: Kurze Beschreibung/Übersicht des Arbeitsablaufes
+* **Auslöser**: Wer löst den Arbeitsablauf aus
+* **Häufigkeit**: Wie Oft pro Monat/Jahr wird der Arbeitsabaluf ausgeführt
 * **Arbeitsablauf**: Anleitung zum Arbeitsablauf
