@@ -57,7 +57,7 @@ Zeigt, welche Leserprofile primär an welchen Kapiteln interessiert sind.
 Anleitungen ausserhalb der Funktionalen Einheiten sind definierte und wiederkehrende Arbeitsabläufe welche nicht einer Funktionalen Einheit zugeordnet werden können.
 ## Kapitel der Dokumentation
 * **Verantwortlicher**: AGI MA welcher den Arbeitsablauf ausführt
-* **Überblick**: Kurze Beschreibung/Übersicht des Arbeitsablaufes
-* **Auslöser**: Wer löst den Arbeitsablauf aus
-* **Häufigkeit**: Wie Oft pro Monat/Jahr wird der Arbeitsabaluf ausgeführt
+* **Beschreibung**: Kurze Beschreibung/Übersicht des Arbeitsablaufes
+  * **Auslöser**: Wer löst den Arbeitsablauf aus
+  * **Häufigkeit**: Wie Oft pro Monat/Jahr wird der Arbeitsabaluf ausgeführt
 * **Arbeitsablauf**: Anleitung zum Arbeitsablauf
