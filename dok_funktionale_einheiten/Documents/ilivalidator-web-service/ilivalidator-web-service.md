@@ -14,6 +14,7 @@ Die Programmbibliothek _ilivalidator_ selbst ist nicht Bestandteil dieser funkti
 ![Komponentendiagramm](https://www.planttext.com/api/plantuml/img/SoWkIImgAStDuU9AJ2x9Br9G2YrEBL9II2nMA0Kok9BpSmloyrBpIXIYCtCoon9pCbCIWSfqorEJT87oPPd9gLOnUS45HPbvwGfE-Vab2jeAo0fZGIQ13E7Y0fcdeAjh1-KwfEQb0Eq50000)
 
 * ilivalidator-web-service: [https://github.com/sogis/ilivalidator-web-service-websocket](https://github.com/sogis/ilivalidator-web-service-websocket)
+* ilivalidator-custom-functions [https://github.com/sogis/ilivalidator-custom-functions](https://github.com/sogis/ilivalidator-custom-functions)
 
 ## Benutzung
 Aufruf des _ilivalidator-web-service_:

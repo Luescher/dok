@@ -39,7 +39,7 @@ TODO: Michael. Z.B. auch was zur DB (kein spezieller DB-Server etc.). Eventuell 
 Die Umwandlung des XML-Auszuges in ein PDF wird mit _XSLT_ und _XSL-FO_ gemacht. Für die XSLT-Transformation mussten zusätzlich einige Java-Funktionen geschrieben werden.
 
 ### Oereb-Iconizer
-Siehe Erläuterungen im [README](https://github.com/openoereb/oereb-iconizer/blob/master/README.md).
+Siehe Erläuterungen im [README](https://github.com/openoereb/oereb-iconizer/blob/master/README.md). _Oereb-iconizer_ wird mittels _GRETL_ verwendet.
 
 ### Oereb-web-service
 Spring Boot Anwendung, welche die Daten aus der Datenbank mit _JdbcTemplates_ zusammensucht und anschliessend mit _Jaxb_ in eine XML-Datei serialisiert. Für die Umwandlung nach PDF wird _pdf4oereb_ als Bibliothek verwendet.
