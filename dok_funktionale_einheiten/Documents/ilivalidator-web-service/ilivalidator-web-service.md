@@ -39,12 +39,12 @@ Siehe [`build.gradle`](https://github.com/sogis/ilivalidator-web-service-websock
 
 ## Konfiguration und Betrieb in der GDI
 * Template Openshift: [https://github.com/sogis/openshift-templates/tree/master/ilivalidator](https://github.com/sogis/openshift-templates/tree/master/ilivalidator)
-* TODO: nginx wegen Websocket??
+* nginx.conf: [https://github.com/sogis/pipelines/blob/master/api_webgisclient/api-gateway/resources.yaml](https://github.com/sogis/pipelines/blob/master/api_webgisclient/api-gateway/resources.yaml) Die `nginx.conf`-Datei wird noch als ConfigMap in Openshift verwendet. Wird sie zukünftig auch in das Image gebrannt, wandert sie in das qwcservices-Repository.
 
 ## Interne Struktur
 Die Kommunikation zwischen Client (Browser) und Server basiert auf Websocket. Damit können auch lang dauernde Validierungen vorgenommen werden ohne dass es zu Timeouts (Client oder Firewall/SES) kommt. Absprachen mit AIO und GDI waren notwendig, damit Websocket geöffnet ist und zusammenspielt.
 
 Im `index.html` sind einige Zeilen Javascript vorhanden. Vor allem wegen des Einsatzes von Websocket.
 
-Informationen zu den zusätzlichen Validierungen sind im [README](https://github.com/sogis/ilivalidator-web-service-websocket/blob/master/README.md) nachzulesen.
+Informationen zu den zusätzlichen Validierungen und programmtechnisch damit umgegangen wird, sind im [README](https://github.com/sogis/ilivalidator-web-service-websocket/blob/master/README.md) nachzulesen.
 
