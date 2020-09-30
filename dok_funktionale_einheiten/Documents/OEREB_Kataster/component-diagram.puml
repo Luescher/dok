@@ -1,0 +1,43 @@
+@startuml
+
+actor "User" as user
+
+package "Funktionale Einheit" {
+    component [OEREB-Webservice] as OeWS
+    component [pdf4oereb] as Pdf4Oereb
+
+    component [OEREB-WMS] as OeWMS
+    component [Web GIS Client] as Client
+
+    database "OEREB-Datenbank" as OeDB
+    
+    component [OEREB-GRETL-Jobs] as Gretl
+    component [oereb-iconizer] as Iconizer
+}
+
+database "Edit-DB" as EditDB #f2f2f2
+
+file XTF as Files #f2f2f2
+
+cloud {
+  file PDF as Pdf #f2f2f2
+} 
+
+user --> Client
+
+OeWS --> OeDB
+OeWS -- Pdf4Oereb : depends
+OeWMS --> OeDB
+
+Client --> OeWS : use
+Client --> OeWMS : use
+Client --> Pdf
+
+Gretl <-- Files  
+Gretl <-- EditDB
+
+OeDB <-- Gretl
+
+Gretl -- Iconizer : depends
+
+@enduml
