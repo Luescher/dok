@@ -1,0 +1,17 @@
+@startuml
+
+actor "User" as user
+
+package "Funktionale Einheit" {
+    component [AV-Datenabgabe:\nSpring Boot + Thymeleaf] as Datenabgabe
+}
+
+component [Data service] as Dataservice #f2f2f2
+component [AWS-S3] as S3 #f2f2f2
+
+user --> Datenabgabe
+
+Datenabgabe -- S3 : use
+Datenabgabe -- Dataservice : use
+
+@enduml
