@@ -2,19 +2,21 @@
 
 Verantwortlicher: Stefan Ziegler
 
-## Beschreibung Funktionale Einheit
-Der ilivalidator-web-service ist eine [Spring-Boot-Anwendung](https://spring.io/projects/spring-boot) und verwendet [ilivalidator](https://github.com/claeis/ilivalidator) für die Validierung der INTERLIS-Übertragungsdatei.
+## Beschreibung 
+Der _ilivalidator-web-service_ ist eine [Spring-Boot-Anwendung](https://spring.io/projects/spring-boot) und verwendet [_ilivalidator_](https://github.com/claeis/ilivalidator) für die Validierung der INTERLIS-Transferdatei.
 
-Der ilivalidator-web-service  stellt eine einfache Art dar INTERLIS-Daten gegenüber einem INTERLIS-Modell zu prüfen (= Modellkonformität). Die zu prüfenden INTERLIS-Daten werden mittels Webformular auf einen Server hochgeladen, wo sie anschliessend automatisch geprüft werden. Das Prüfresultat wird direkt im Browser angezeigt.
+Der _ilivalidator-web-service_ stellt eine einfache Art dar INTERLIS-Daten gegenüber einem INTERLIS-Modell zu prüfen (= Modellkonformität). Die zu prüfenden INTERLIS-Daten werden mittels Webformular auf einen Server hochgeladen, wo sie anschliessend automatisch geprüft werden. Das Prüfresultat wird direkt im Browser angezeigt.
 Für die Nutzungsplanung wurden spezielle Validierungsfunktionen implementiert. 
 
-Die Programmbibliothek ilivalidator selbst ist nicht Bestandteil dieser funktionalen Einheit. 
+Die Programmbibliothek _ilivalidator_ selbst ist nicht Bestandteil dieser funktionalen Einheit. 
 
-### Funktionsweise
-<Hier fehlt das Diagramm und die Erläuterungen dazu>
+## Komponenten
+![Komponentendiagramm](https://www.planttext.com/api/plantuml/img/SoWkIImgAStDuU9AJ2x9Br9G2YrEBL9II2nMA0Kok9BpSmloyrBpIXIYCtCoon9pCbCIWSfqorEJT87oPPd9gLOnUS45HPbvwGfE-Vab2jeAo0fZGIQ13E7Y0fcdeAjh1-KwfEQb0Eq50000)
+
+* ilivalidator-web-service: [https://github.com/sogis/ilivalidator-web-service-websocket](https://github.com/sogis/ilivalidator-web-service-websocket)
 
 ## Benutzung
-Aufruf des ilivalidator-web-service.
+Aufruf des _ilivalidator-web-service_:
 
 Produktion: https://geo.so.ch/ilivalidator
 
@@ -22,11 +24,27 @@ Integration: https://geo-i.so.ch/ilivalidator
 
 Test: https://geo-t.so.ch/ilivalidator
 
-### Benutzerhandbuch
-Benutzerhandbuch zur Bedieung des Webservices: https://github.com/sogis/ilivalidator-web-service/blob/master/docs/user-manual-de.rst
+### Anleitungen
+Benutzerhandbuch zur Bedienung der Anwendung: [https://github.com/sogis/ilivalidator-web-service-websocket/blob/master/docs/user-manual-de.rst](https://github.com/sogis/ilivalidator-web-service-websocket/blob/master/docs/user-manual-de.rst)
+
+Informationen zu speziellen Nutzungsplanungstests: [https://github.com/sogis/ilivalidator-web-service-websocket/blob/master/docs/user-manual-de-nplso.md](https://github.com/sogis/ilivalidator-web-service-websocket/blob/master/docs/user-manual-de-nplso.md)
+
+## Konfigurieren und starten
+```
+docker run -p 8080:8080 sogis/ilivalidator-web-service
+```
+
+## Externe Abhängigkeiten
+Siehe [`build.gradle`](https://github.com/sogis/ilivalidator-web-service-websocket/blob/master/build.gradle). 
 
 ## Konfiguration und Betrieb in der GDI
-* Template Openshift: https://github.com/sogis/openshift-templates/tree/master/ilivalidator
-* Repo ilivalidator-web-service: https://github.com/sogis/ilivalidator-web-service
+* Template Openshift: [https://github.com/sogis/openshift-templates/tree/master/ilivalidator](https://github.com/sogis/openshift-templates/tree/master/ilivalidator)
+* TODO: nginx wegen Websocket??
 
+## Interne Struktur
+Die Kommunikation zwischen Client (Browser) und Server basiert auf Websocket. Damit können auch lang dauernde Validierungen vorgenommen werden ohne dass es zu Timeouts (Client oder Firewall/SES) kommt. Absprachen mit AIO und GDI waren notwendig, damit Websocket geöffnet ist und zusammenspielt.
+
+Im `index.html` sind einige Zeilen Javascript vorhanden. Vor allem wegen des Einsatzes von Websocket.
+
+Informationen zu den zusätzlichen Validierungen sind im [README](https://github.com/sogis/ilivalidator-web-service-websocket/blob/master/README.md) nachzulesen.
 

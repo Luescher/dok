@@ -1,21 +1,21 @@
 # [Name Funktionale Einheit]
 Verantwortlicher: [Vorname] [Name]
 
-## Beschreibung Funktionale Einheit
+## Beschreibung 
 
-### Komponenten
+## Komponenten
 
 ## Benutzung
-[Erläutert dem Endbenutzer, wie die Komponente genutzt wird (GUI, bei Api wie die API-Aufrufe aussehen)]
+[Erläutert dem Endbenutzer, wie die funktionale Einheit genutzt wird (GUI, bei API wie die API-Aufrufe aussehen)]
 
 ## Konfigurieren und starten
-[Beschreibt, wie die Komponente konfiguriert und gestartet werden kann]
+[Beschreibt, wie die funktionale Einheit / die Komponenten konfiguriert und gestartet werden kann/können]
 
 ## Externe Abhängigkeiten
-[Beschreibt, welche externen Abhängigkeiten für die Komponente bestehen]
+[Beschreibt, welche externen Abhängigkeiten für die funktionale Einheit / die Komponenten bestehen]
 
 ## Konfiguration und Betrieb in der GDI
-[Beschreibt, wo die Komponente wie in der GDI in Betrieb ist]
+[Beschreibt, wo die funktionale Einheit / die Komponenten wie in der GDI in Betrieb ist/sind]
 
 ## Interne Struktur
-[Beschreibt den grundsätzlichen internen Aufbau der Komponente zwecks Verständnis für die Weiterentwicklung]
+[Beschreibt den grundsätzlichen internen Aufbau der funktionalen Einheit / der Komponenten zwecks Verständnis für die Weiterentwicklung]

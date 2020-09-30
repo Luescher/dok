@@ -1,0 +1,8 @@
+@startuml
+
+actor "User" as user
+component [ilivalidator-web-service:\nSpring Boot + ilivalidator] as comp
+
+user --> comp
+
+@enduml
