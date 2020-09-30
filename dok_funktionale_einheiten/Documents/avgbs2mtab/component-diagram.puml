@@ -1,0 +1,8 @@
+@startuml
+
+actor "User" as user
+component [avgbs2mtab-web-service:\nSpring Boot + avgbs2mtab] as comp
+
+user --> comp
+
+@enduml

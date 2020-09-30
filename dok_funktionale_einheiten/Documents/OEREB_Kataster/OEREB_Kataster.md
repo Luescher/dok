@@ -19,8 +19,6 @@ Eine detaillierte Auflistung sämtlicher Komponenten ist dem [ÖREB-Handbuch](ht
 TODO: Andrea. Verlinkung auf Typo3 reicht wohl (?).
 
 ## Konfigurieren und starten
-[Beschreibt, wie die funktionale Einheit / die Komponenten konfiguriert und gestartet werden kann/können]
-
 Der _ÖREB-Kataster_ als Gesamtanwendung kann (noch) nicht einfach lokal gestartet werden. Mit `docker-compose` wäre dies problemlos möglich. Die Abrenzung müsste trotzdem geklärt werden, d.h. gehören die Datenumbauprozesse dazu oder "nur" der Betrieb des eigentlichen ÖREB-Katasters. Was ist mit dem Web GIS Client? Wie werden die Daten in die lokale Datenbank importiert.
 
 Insbesondere für die ÖREB-GRETL-Jobs steht eine lokale Entwicklungsmöglichkeit (mit lokalen Datenbanken) zur Verfügung. Siehe [https://github.com/sogis/oereb-gretljobs](https://github.com/sogis/oereb-gretljobs).
@@ -33,7 +31,7 @@ Die Kapitel [Integrationsprozesse](https://sogis.github.io/oereb-handbuch/master
 ## Konfiguration und Betrieb in der GDI
 [Beschreibt, wo die funktionale Einheit / die Komponenten wie in der GDI in Betrieb ist/sind]
 
-TODO: Michael. Z.B. auch was zur DB (kein spezieller DB-Server etc.)
+TODO: Michael. Z.B. auch was zur DB (kein spezieller DB-Server etc.). Eventuell reicht bei der DB bereits Verlinkung auf das geschützte DB-Betriebsdokument? Dito bei anderen Komponenten?
 
 ## Interne Struktur
 

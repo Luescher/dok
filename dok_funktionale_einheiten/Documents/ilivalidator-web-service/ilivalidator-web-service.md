@@ -34,6 +34,8 @@ Informationen zu speziellen Nutzungsplanungstests: [https://github.com/sogis/ili
 docker run -p 8080:8080 sogis/ilivalidator-web-service
 ```
 
+Die Konfiguration der Anwendung wird in einer `application.properties`-Datei gemacht.
+
 ## Externe Abhängigkeiten
 Siehe [`build.gradle`](https://github.com/sogis/ilivalidator-web-service-websocket/blob/master/build.gradle). 
 
@@ -48,3 +50,6 @@ Im `index.html` sind einige Zeilen Javascript vorhanden. Vor allem wegen des Ein
 
 Informationen zu den zusätzlichen Validierungen und programmtechnisch damit umgegangen wird, sind im [README](https://github.com/sogis/ilivalidator-web-service-websocket/blob/master/README.md) nachzulesen.
 
+Das Dockerimage wird mit Gradle-Tasks gebuilded und auch getestet.
+
+In Tomcat wird ein Servercontext gesetzt (`/ilivalidator`).
