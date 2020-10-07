@@ -9,4 +9,5 @@
 * [~~Suchservice~~](Documents/Suchservice/Suchservice.md)
 * [WMTS](Documents/WMTS/WMTS.md)
 * ADA-A (Imdas)
+* QGIS 2.18 Vagrantbox
 
