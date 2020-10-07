@@ -12,3 +12,4 @@
 
 * [**Nachführung agi_leitungskataster**](https://github.com/sogis/dok/blob/dok/dok_div_anleitungen/Documents/nachfuehrung_agi_leitungskataster.md)
 * [**LWB-Datenimport (MGDM-Lieferung) an die Aggregationsinfrastruktur**](https://github.com/sogis/dok/blob/dok/dok_div_anleitungen/Documents/LWB-Datenimport.md)
+* [**Rasterdatenaufbereitung mit GDAL**](https://github.com/sogis/dok/blob/dok/dok_div_anleitungen/Documents/rasterdatenaufbereitung.md)
