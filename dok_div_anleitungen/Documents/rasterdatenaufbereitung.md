@@ -16,7 +16,7 @@ Hier die sinnvollen Konvertierungseinstellungen für RGB-Orthofotos:
 gdal_translate -b 1 -b 2 -b 3 -of GTIFF -ot BYTE --config GDAL_DISABLE_READDIR_ON_OPEN TRUE\
   --config GDAL_TIFF_INTERNAL_MASK YES -co COMPRESS=JPEG -co PHOTOMETRIC=YCbCr -co TILED=YES\
   -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co BIGTIFF=YES -co NUM_THREADS=4\
-  -a_srs EPSG:2056 ch.swisstopo.orthofoto_2018.rgb.vrt ch.swisstopo.orthofoto_2018.rgb.tif
+  -a_nodata "0 0 0" -a_srs EPSG:2056 ch.swisstopo.orthofoto_2018.rgb.vrt ch.swisstopo.orthofoto_2018.rgb.tif
 ```
 
 `-co PHOTOMETRIC=YCBR` erlaubt noch besser komprimierte JPEG-Bilder ([using it make the size of the image typically
